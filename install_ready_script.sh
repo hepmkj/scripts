@@ -17,6 +17,6 @@ sudo systemctl enable docker
 
 }
 
-install_git
-install_docker
+#install_git
+#install_docker
 
