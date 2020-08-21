@@ -1,5 +1,7 @@
 #!/bin/bash 
 
+#use centos7 with docker as base image
+
 install_git () {
 sudo  yum install git
 }
@@ -55,5 +57,5 @@ minikube start
 }
 
 #install_git
-#install_docker
+install_docker
 install_minikube
