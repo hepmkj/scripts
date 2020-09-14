@@ -4,6 +4,7 @@
 
 install_git () {
 sudo  yum install git
+sudo yum install bash-completion
 }
  
 #Install Docker
@@ -56,6 +57,6 @@ minikube start
 
 }
 
-#install_git
+install_git
 install_docker
 install_minikube
