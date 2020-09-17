@@ -57,6 +57,18 @@ minikube start
 
 }
 
-install_git
-install_docker
-install_minikube
+install_java () {
+    echo "Installing java 11 "
+    sudo yum update
+    sudo yum install java-11-openjdk-devel
+    java -version
+
+    sudo yum install maven
+
+}
+
+#install_git
+#install_docker
+#install_minikube
+
+install_java
