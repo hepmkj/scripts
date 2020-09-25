@@ -63,7 +63,20 @@ install_java () {
     sudo yum install java-11-openjdk-devel
     java -version
 
-    sudo yum install maven
+    tools="maven tree"
+
+    for tool in $tools
+    do
+        sudo yum install $tool
+    done
+
+
+}
+
+install_go () {
+
+    curl -LO https://storage.googleapis.com/golang/go1.7.linux-amd64.tar.gz
+    sudo tar -C /usr/local -xvzf go1.7.linux-amd64.tar.gz
 
 }
 
@@ -71,4 +84,5 @@ install_java () {
 #install_docker
 #install_minikube
 
-install_java
+#install_java
+install_go
